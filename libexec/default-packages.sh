@@ -6,7 +6,7 @@ install_default_packages() {
   local installed_version requirements_file args
 
   installed_version=$1
-  requirements_file=${PYENV_ROOT}/default-packages
+  requirements_file=${XDG_CONFIG_HOME}/default-pyenv-packages
 
   if [ -f "$requirements_file" ]; then
     args=( -r "$requirements_file" )
